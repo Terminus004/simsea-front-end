@@ -79,4 +79,4 @@ except for a connection to the Solr instance.
 + for fast and continuous deployment you can use script with a screen shell, 
 + UI enhancement in views folder with spotify like background 
 + [solrsearch.service](https://github.com/Terminus004/simsea-front-end/blob/master/solrsearch.service) file for running Simsea Front End as a service 
-+ Please change file locations as per your needs 
++ Please change file locations inside each layout/config/script as per your needs including port for your SOLR instance 
