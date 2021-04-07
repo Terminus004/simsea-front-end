@@ -73,12 +73,6 @@ The search page can be modified by modifying the template
 As of now, SolrSearch can work completely without any Internet connection,
 except for a connection to the Solr instance.
 
-### Original Project 
-
-This project is a fork of original solrsearch project from [Ichbinjoe](https://github.com/Ichbinjoe/solrsearch)
-
-With added Perks
-
 ### Perks
 
 + For my project of Simsea search the code is modified with additon to [linux shell script](https://github.com/Terminus004/solrsearch/blob/master/index.sh) 
