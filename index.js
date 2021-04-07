@@ -1,12 +1,13 @@
+#!/usr/bin/env node
 const express = require('express');
 const http = require('http');
 const path = require('path');
 
 function get_config() {
     const fs = require('fs');
-    if (!fs.existsSync('config.json'))
-        fs.copyFileSync('config.json.example', 'config.json')
-    return require('config.json')
+    if (!fs.existsSync('/home/ubuntu/solrsearch/config.json'))
+        fs.copyFileSync('/home/ubuntu/solrsearch/config.json.example', '/home/ubuntu/solrsearch/config.json')
+    return require('/home/ubuntu/solrsearch/config.json')
 }
 
 const config = get_config();
@@ -31,10 +32,11 @@ function render_result(q, res, data) {
 
     tmpl.results = []
     for (const doc of docs) {
-        const title = (doc.title && doc.title.length > 0 && doc.title[0]) || doc.id.replace(result_replacer, "")
+        const title = (doc.title) || doc.id.replace(result_replacer, "") || (doc.content)
         tmpl.results.push({
             url: doc.id.replace(result_replacer, config.replace.with),
-            title
+            title,
+	    content: doc.content
         })
     }
 

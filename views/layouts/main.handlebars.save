@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>Simsea | The simple and privacy driven search engine</title>
-	<link rel="shortcut icon" type="image/jpeg" href=”https://simsea.s3.ap-south-1.amazonaws.com/alu3.jpg”/>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style media="screen">
@@ -22,7 +21,6 @@ body {
   font-family: 'CircularBook', Helvetica, Arial, sans-serif;
   background-size: 100% 100%;
   font-size:120%;
-  background: #030321;
 }
 
 .body {
@@ -33,7 +31,6 @@ body {
   top: 0;
   left: 0;
   position: repeat;
-background-color: #000000;
   z-index: -1;
 }
 svg {
@@ -54,7 +51,7 @@ svg {
 }
 
 .text-copy:nth-child(1){
-	stroke: #DEFC30;
+	stroke: #white;
 	animation-delay: -1;
 }
 
@@ -66,7 +63,7 @@ svg {
 .text-copy:nth-child(3){
 	stroke: #BD0034;
 	animation-delay: -3s;
-}
+}#FC4F30
 
 .text-copy:nth-child(4){
 	stroke: #BD0034;

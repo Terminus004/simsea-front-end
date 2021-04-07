@@ -3,9 +3,25 @@
         <div class="col-12">
             <form action="{{base}}" method="get">
                 <div class="input-group">
-                  <input name="q" type="text" class="form-control" placeholder="Search"{{#if q}}value="{{q}}"{{/if}}>
+                  <input name="q" autocomplete="on" spellcheck="true" text-color="white" type="text" style="padding: 10px;
+                color: white;
+                border: 1px solid white;
+                float: left;
+                width: 70%;
+                height: 2em;
+                font-size: 1.5em;
+                background: transparent;" class="form-control" placeholder="Search the web"{{#if q}}value="{{q}}"{{/if}}>
                     <div class="input-group-append">
-                        <button class="btn btn-primary">Search</button>
+                        <button class="btn btn-primary" style="float: left;
+align: center;  
+width: 100px;
+height: 2.30em;
+  padding: 10px;
+  color: white;
+  font-size: 25px;
+  border: 1px solid white;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;"><i class="fa fa-search"></i></button>
                     </div>
                 </div>
             </form>
@@ -15,7 +31,9 @@
     <div class="row">
         <div class="col-12">
             <a href="{{this.url}}"><h3>{{this.title}}</h3></a>
-            <p>{{this.url}}</p>
+            <a href="{{this.url}}"><p>{{this.url}}</p></a>
+            <p class = "text">{{this.content}}</p>
+            <br>
         </div>
     </div>
     {{/each}}

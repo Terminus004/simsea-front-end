@@ -1,10 +1,6 @@
 # SolrSearch
 
-SolrSearch is a simple, one NodeJs file application which acts as a dumb
-front end to an Apache Solr instance. Specifically, it is able to front Solr
-when Solr is used to index large amounts of on-filesystem documentation, also
-exposed to the web. However, SolrSearch can be used for plenty of other
-applications as well!
+SolrSearch is a simple, one NodeJs file application which acts as a front end to an Apache Solr instance. This is also the frontend for [Simsea By TermIndustries](https://search.termindustries.com)
 
 ## Getting Started
 
@@ -15,10 +11,10 @@ instance with a collection you would like to search.
 
 ### Installing
 
-First, clone down SolrSearch:
+First, clone SolrSearch:
 
 ```
-git clone https://github.com/Ichbinjoe/solrsearch.git && cd solrsearch
+git clone https://github.com/Terminus004/solrsearch.git && cd solrsearch
 ```
 
 Run npm install:
@@ -77,10 +73,16 @@ The search page can be modified by modifying the template
 As of now, SolrSearch can work completely without any Internet connection,
 except for a connection to the Solr instance.
 
-## Contributing
+### Original Project 
 
-I'm very gracious for any pull requests people may have! Please send them over.
+This project is a fork of original solrsearch project from [Ichbinjoe](https://github.com/Ichbinjoe/solrsearch)
 
-## License
+With added Perks
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+### Perks
+
++ For my project of Simsea search the code is modified with additon to [linux shell script](https://github.com/Terminus004/solrsearch/blob/master/index.sh) 
++ for fast and continuous deployment you can use script with a screen shell, 
++ UI enhancement in views folder with spotify like background 
++ [solrsearch.service](https://github.com/Terminus004/solrsearch/blob/master/solrsearch.service) file for running solrsearch as a service 
++ Please change file locations as per your needs 
